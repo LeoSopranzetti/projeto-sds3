@@ -1,4 +1,4 @@
-package com.leo.security;
+package com.leo.dsvendas.security;
 
 import java.util.Arrays;
 
@@ -13,6 +13,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+
+
 
 @Configuration
 @EnableWebSecurity
