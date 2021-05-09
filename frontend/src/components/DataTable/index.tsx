@@ -4,6 +4,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { SalePage } from "types/sale";
 import { formatLocalDate } from "utils/format";
+import { BASE_URL } from "utils/requests";
 
 function DataTable() {
 
@@ -18,7 +19,7 @@ function DataTable() {
     })
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/sales?page=${activePage}`)
+        axios.get(`${BASE_URL}/sales?page=${activePage}`)
             .then(response => {
                 setPage(response.data);
             })
