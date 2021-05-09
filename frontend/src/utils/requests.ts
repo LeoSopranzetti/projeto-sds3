@@ -1,0 +1,1 @@
+export const urlbase = "http//:localhost:8080";
